@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do Player de Vídeo</title>
+    <style>
+        body {
+            background: #0a0a0a;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            text-align: center;
+        }
+        .video-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 170, 255, 0.3);
+            background: #000;
+        }
+        video {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        .fallback {
+            background: rgba(0, 170, 255, 0.1);
+            padding: 50px;
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste do Player de Vídeo AutoMob</h1>
+    
+    <div class="video-container">
+        <video autoplay muted loop playsinline controls>
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+            <div class="fallback">
+                <h3>🎥 Vídeo não carregou</h3>
+                <p>Vídeo demonstrativo do rastreador AutoMob</p>
+                <p>Instale o rastreador em 3 passos simples</p>
+            </div>
+        </video>
+    </div>
+    
+    <p style="margin-top: 30px; color: #b0b0b0;">
+        Se você vê este vídeo funcionando, o player está configurado corretamente!
+    </p>
+</body>
+</html>
